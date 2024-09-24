@@ -3,7 +3,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
-
+import "@stream-io/video-react-sdk/dist/css/styles.css";
+import "react-datepicker/dist/react-datepicker.css";
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
   title: "VidiQ",
   description:
     "VidiQ is an real time video conferencing application built with Next.js,React, TypeScript, Stream and Tailwind CSS.",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 export default function RootLayout({
