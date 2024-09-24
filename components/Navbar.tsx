@@ -9,15 +9,15 @@ const Navbar = () => {
     <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
         <Image
-          src="/icons/logo.svg"
-          width={32}
+          src="/icons/vidiq-logo.svg"
+          width={92}
           height={32}
           alt="VidiQ logo"
-          className="max-sm:size-10"
+          className="max-sm:size-14 pt-2"
         />
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden">
+        {/* <p className="text-[26px] font-extrabold text-white max-sm:hidden">
           VidiQ
-        </p>
+        </p> */}
       </Link>
 
       <div className="flex-between gap-5">

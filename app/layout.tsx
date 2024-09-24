@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "VidiQ is an real time video conferencing application built with Next.js,React, TypeScript, Stream and Tailwind CSS.",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/vidiq-favicon.png",
   },
 };
 
