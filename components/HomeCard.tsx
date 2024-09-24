@@ -2,19 +2,20 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
+interface HomeCardProps {
+  title: string;
+  description: string;
+  img: string;
+  handleClick: () => void;
+  className?: string;
+}
 const HomeCard = ({
   title,
   description,
   img,
   handleClick,
   className,
-}: {
-  title: string;
-  description: string;
-  img: string;
-  handleClick: () => void;
-  className?: string;
-}) => {
+}: HomeCardProps) => {
   return (
     <div
       className={cn(
