@@ -5,6 +5,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "react-datepicker/dist/react-datepicker.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -42,6 +44,7 @@ export default function RootLayout({
       >
         <body className={`${inter.className} bg-dark-2`}>
           {children}
+          <SpeedInsights />
           <Toaster />
         </body>
       </ClerkProvider>
